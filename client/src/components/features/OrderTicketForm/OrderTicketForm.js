@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col, Alert, Progress } from 'reactstrap';
 
 import './OrderTicketForm.scss';
-import SeatChooser from './../SeatChooser/SeatChooserContainer';
+import SeatChooser from '../SeatChooser/SeatChooserContainer';
 
 class OrderTicketForm extends React.Component {
 

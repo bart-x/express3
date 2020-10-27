@@ -1,7 +1,7 @@
 import React from 'react';
 import { Alert, Progress } from 'reactstrap';
 
-import Concerts from './../Concerts/Concerts';
+import Concerts from '../Concerts/Concerts';
 
 class Lineup extends React.Component {
 
