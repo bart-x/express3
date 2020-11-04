@@ -20,4 +20,6 @@ const db = {
     ],
 };
 
+const json = JSON.stringify(db);
+
 module.exports = db;
