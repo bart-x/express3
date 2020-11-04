@@ -32,8 +32,8 @@ app.use((req, res) => {
 });
 
 // connects our backend code with the database
-mongoose.connect("mongodb://localhost:27017/NewWaveDB", {
-    useNewUrlParser: true,
+mongoose.connect("mongodbmongodb+srv://power_user:<password>@cluster0concert.wascp.mongodb.net/<NewWaveDB>?retryWrites=true&w=majority", {
+    useNewUrlParser: true, useUnifiedTopology: true
 });
 const db = mongoose.connection;
 
