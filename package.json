@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "build": "cd client && yarn install && yarn build",
-    "test": "SET NODE_ENV = 'dev' && mocha \"./tests/**/*.test.js\"",
+    "test": "snyk test && SET NODE_ENV = 'dev' && mocha \"./tests/**/*.test.js\"",
     "test:watch": "SET NODE_ENV = 'dev' && onchange \"./**/*.js\" -i -k -- yarn run test"
   },
   "dependencies": {
@@ -18,7 +18,9 @@
     "cors": "2.8.5",
     "cross-env": "^7.0.2",
     "express": "4.17.1",
+    "helmet": "3.21.1",
     "mocha": "6.2.1",
+    "mongo-sanitize": "1.0.1",
     "mongoose": "^5.10.11",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
